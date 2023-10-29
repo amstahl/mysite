@@ -16,15 +16,10 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
-# Uncomment next two lines to enable admin:
-#from django.contrib import admin
-#from django.urls import path
+from django.contrib import admin
+from django.urls import include, path
 
-from django.urls import include, re_path
-import Polls.views
-
-# Django processes URL patterns in the order they appear in the array
 urlpatterns = [
-    re_path(r'^$', Polls.views.index, name='index'),
-    re_path(r'^home$', Polls.views.index, name='home')
+    path("polls/", include("polls.urls")),
+    path("admin/", admin.site.urls),
 ]

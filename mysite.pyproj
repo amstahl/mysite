@@ -35,24 +35,27 @@
     <Compile Include="mysite\settings.py" />
     <Compile Include="mysite\urls.py" />
     <Compile Include="mysite\wsgi.py" />
-    <Compile Include="Polls\admin.py" />
-    <Compile Include="Polls\apps.py" />
-    <Compile Include="Polls\migrations\__init__.py" />
-    <Compile Include="Polls\models.py" />
-    <Compile Include="Polls\tests.py" />
-    <Compile Include="Polls\views.py" />
-    <Compile Include="Polls\__init__.py" />
+    <Compile Include="polls\admin.py" />
+    <Compile Include="polls\apps.py" />
+    <Compile Include="polls\migrations\__init__.py" />
+    <Compile Include="polls\models.py" />
+    <Compile Include="polls\tests.py" />
+    <Compile Include="polls\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="polls\views.py" />
+    <Compile Include="polls\__init__.py" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Polls\templates\Polls\index.html" />
+    <Content Include="polls\templates\polls\index.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="mysite\" />
-    <Folder Include="Polls\" />
-    <Folder Include="Polls\migrations\" />
-    <Folder Include="Polls\templates\" />
-    <Folder Include="Polls\templates\Polls\" />
+    <Folder Include="polls\" />
+    <Folder Include="polls\migrations\" />
+    <Folder Include="polls\templates\" />
+    <Folder Include="polls\templates\polls\" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
